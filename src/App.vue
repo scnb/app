@@ -6,12 +6,14 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// 引入组件
+import Header from './components/Header/index.vue'
+import Footer from './components/Footer/index.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Footer
   }
 }
 </script>

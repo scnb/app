@@ -10,7 +10,7 @@ import Search from '@/pages/Search';
 import Register from '@/pages/Register';
 import Login from '@/pages/Login';
 
-//配置路由
+//配置路由  
 export default new VueRouter({
     //配置路由
     routes: [
@@ -29,6 +29,11 @@ export default new VueRouter({
         {
             path: '/register',
             component: Register
+        },
+        // 重定向，在项目跑起来的时候，访问/，立马让他定向到首页
+        {
+            path: '/',
+            component: Home
         }
     ]
 })

@@ -16,19 +16,28 @@ export default new VueRouter({
     routes: [
         {
             path: '/home',
-            component: Home
+            component: Home,
+            meta: {show: true}
         },
         {
             path: '/search',
-            component: Search
+            component: Search,
+            meta: {show: true}
         },
         {
             path: '/login',
-            component: Login
+            component: Login,
+            meta: {show: false}
         },
         {
             path: '/register',
-            component: Register
+            component: Register,
+            meta: {show: false}
+        },
+        // 重定向，项目跑起来时，立马重定向到首页
+        {
+            path: '*',
+            component: Home
         }
     ]
 })

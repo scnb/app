@@ -34,11 +34,6 @@ export default new VueRouter({
             component: Register,
             meta: {show: false}
         },
-        // 重定向，项目跑起来时，立马重定向到首页
-        {
-            path: '*',
-            component: Home
-        },
         // 重定向，在项目跑起来的时候，访问/，立马让他定向到首页
         {
             path: '/',
